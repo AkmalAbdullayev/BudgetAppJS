@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" async></script>
+    <title>Budget App</title>
+</head>
+
+<body>
+    <h1 class="display-3 font-weight-bold">Budget App</h1>
+    <div class="section">
+        <div class="money" id="money">
+            <h4 class="font-weight-bold">Budget</h4>
+            <i class="fa fa-money"></i>
+            <span class="font-weight-bold unitMoney" id="unitMoney">0</span>
+        </div>
+        <div class="expenses">
+            <h4 class="font-weight-bold">Expenses</h4>
+            <i class="fa fa-credit-card"></i>
+            <span class="font-weight-bold unitExpenses" id="unitExpenses">0</span>
+        </div>
+        <div class="balance">
+            <h4 class="font-weight-bold">Balance</h4>
+            <i class="fa fa-dollar"></i>
+            <span class="font-weight-bold unitBalance" id="unitBalance">0</span>
+        </div>
+    </div>
+    <div class="mainCrud" id="mainCrud">
+        <div class="crudForTitle" id="crudForTitle">
+            <h4>Expense Title</h4>
+        </div>
+        <div class="crudForValue" id="crudForValue">
+            <h4>Expense Value</h4>
+        </div>
+    </div>
+    <div class="app">
+        <div class="first-input">
+            <div class="form-group">
+                <label for="budget" class="font-weight-bold">Please Enter Your Budget</label>
+                <input type="number" class="form-control" id="budget">
+                <input type="button" value="Calculate" class="form-control w-25" id="amount">
+            </div>
+        </div>
+
+        <div class="second-input">
+            <div class="form-group">
+                <label for="expense" class="font-weight-bold">Please Enter Your Expense</label>
+                <input type="text" class="form-control" id="expense">
+                <label for="expenseAmount" class="font-weight-bold">Please Enter Expense Amount</label>
+                <input type="number" class="form-control" id="expenseAmount">
+                <input type="button" value="Add Expense" class="form-control btn" id="addBtn">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
